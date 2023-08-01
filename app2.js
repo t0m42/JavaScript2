@@ -56,7 +56,7 @@ class Carrito {
     this.listaCarrito.push(producto);
   }
 
-  mostarProductos() {
+  mostrarProductos() {
     let listaEnTexto = "";
     this.listaCarrito.forEach((producto) => {
       listaEnTexto = listaEnTexto + producto.descripcion() + "\n----------\n";
@@ -94,7 +94,7 @@ do {
   producto.cantidad = cantidad;
   CARRITO.agregar(producto);
   console.log("Producto añadido con éxito:");
-  CARRITO.mostarProductos();
+  CARRITO.mostrarProductos();
 
   rta = prompt("Ingrese 'ESC' para finalizar").toUpperCase();
 } while (rta != "ESC");
